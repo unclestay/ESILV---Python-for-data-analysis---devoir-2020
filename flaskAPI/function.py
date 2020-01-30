@@ -26,6 +26,3 @@ def get_score(algorithm, X_train, X_test, Y_train, Y_test):
     score = modele.score(X_test, Y_test)
     return score
 
-
-#score = get_score(get_algotithm(50,9,50)),X_train, X_test, Y_train, Y_test)
-#print(score)
