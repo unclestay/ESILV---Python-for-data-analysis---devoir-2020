@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body><form>
+<body>
+    <form method="post">
     {{ form.csrf_token }}
     {{ form.n_estimators }}
     {{ form.max_features }}
     {{ form.max_depth }}
-    {{ form.random_forest }}</form>
+    {{ form.random_forest }}
+    </form>
 </body>
 </html>
