@@ -1,7 +1,7 @@
-import numpy as np
 from flask import Flask, render_template, request, redirect, url_for, Blueprint, flash
+from flask_bootstrap import Bootstrap
 
-from function import get_hyperparametres, get_algorithm, get_score, X_train, X_test, Y_train, Y_test
+from function import get_algorithm, get_score, X_train, X_test, Y_train, Y_test
 
 from flask_wtf import Form
 '''
@@ -11,9 +11,11 @@ from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 import os
 
+
 app = Flask(__name__)
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
+bootstrap = Bootstrap(app)
 
 
 class MyForm(Form):
