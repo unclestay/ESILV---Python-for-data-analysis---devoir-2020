@@ -5,12 +5,12 @@
     <title>Title</title>
 </head>
 <body>
-    <form method="post">
-    {{ form.csrf_token }}
-    {{ form.n_estimators }}
-    {{ form.max_features }}
-    {{ form.max_depth }}
-    {{ form.random_forest }}
+    <form role="form" method="post">
+        {{ form.csrf_token }}
+        {{ form.n_estimators }} n_estimators<br/>
+        {{ form.max_features }} max_features<br/>
+        {{ form.max_depth }} max_depth<br/>
+        {{ form.random_forest }}<br/>
     </form>
 </body>
 </html>
